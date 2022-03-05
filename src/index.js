@@ -91,21 +91,48 @@ const App = () => {
       name: ContextMenuSubMenu,
       text: 'Lista podkategorija 1',
       menu: [
-        { text: 'Submenu 1', action: subFja },
-        { text: 'Submenu 2', action: subFja },
-        { text: 'Submenu 3', action: subFja },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
       ],
     },
     {
       name: ContextMenuSubMenu,
-      text: 'Lista podkategorija 2 ',
+      text: 'Lista podkategorija 1',
       menu: [
-        { text: 'Submenu 4', action: subFja },
-        { text: 'Submenu 5', action: subFja },
-        { text: 'Submenu 6', action: subFja },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
+        {
+          name: ContextMenuCheckBox,
+          text: 'Utišaj server',
+          color: '#ED4245',
+        },
       ],
-    },
+    }
+
   ];
+
+
 
   return <ContextMenuView data={data} />;
 };

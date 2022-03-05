@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-button:hover {
+.button:hover {
   color: white;
   background-color: #3c45a5;
 }
