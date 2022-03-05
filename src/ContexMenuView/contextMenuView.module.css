@@ -1,0 +1,8 @@
+.Container {
+  box-sizing: border-box;
+  width: 196px;
+  background-color: #18191c;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 8px;
+}
