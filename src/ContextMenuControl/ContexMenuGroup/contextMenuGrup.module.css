@@ -1,10 +1,11 @@
-.hr{
-    width: 90%;
-    margin: 0;
+.hr {
+  width: 90%;
+  border-top: 1px solid hsla(220, 4%, 15%, 1);
+  margin: 4px;
 }
 
-.center{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+/* .center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
