@@ -4,7 +4,14 @@ export const ContextMenuView = ({ data }) => {
   return (
     <div className={Styled.Container}>
       {data.map((e) => {
-        return <e.name text={e.text} action={e.action} menu={e.menu} />;
+        return (
+          <e.name
+            text={e.text}
+            color={e.color}
+            menu={e.menu}
+            action={e.action}
+          />
+        );
       })}
     </div>
   );
