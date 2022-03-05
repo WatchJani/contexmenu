@@ -89,7 +89,7 @@ const App = () => {
     },
     {
       name: ContextMenuSubMenu,
-      text: 'Lista podkategorija 1',
+      text: 'Lista 1',
       menu: [
         {
           name: ContextMenuCheckBox,
@@ -110,7 +110,7 @@ const App = () => {
     },
     {
       name: ContextMenuSubMenu,
-      text: 'Lista podkategorija 1',
+      text: 'Lista 2',
       menu: [
         {
           name: ContextMenuCheckBox,
@@ -123,10 +123,10 @@ const App = () => {
           color: '#ED4245',
         },
         {
-          name: ContextMenuCheckBox,
-          text: 'Utišaj server',
-          color: '#ED4245',
-        },
+          name: ContextMenuButton,
+          text: 'Profil',
+          action: fja,
+        }
       ],
     }
 
