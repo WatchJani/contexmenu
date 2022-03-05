@@ -1,0 +1,10 @@
+.submenuContainer {
+  position: absolute;
+  background: #18191c;
+  left: 100%;
+  z-index: 5;
+  top: 0;
+  color: #fff;
+  padding: 0 8px;
+  width: fit-content;
+}
