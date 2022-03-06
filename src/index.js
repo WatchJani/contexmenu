@@ -4,6 +4,8 @@ import { ContextMenuButton } from './ContextMenuControl/ContextMenuButton/contex
 import { ContextMenuCheckBox } from './ContextMenuControl/ContextMenuCheckBox/contexMenuCheckBox';
 import { ContextMenuGroup } from './ContextMenuControl/ContexMenuGroup/contexMenuGroup';
 import ContextMenuSubMenu from './ContextMenuControl/ContextMenuSubMenu/ContextMenuSubMenu';
+import { useContextMenu } from './hooks/useContexMenu';
+import Styled from "./style.module.css"
 
 const App = () => {
   const fja = () => {
@@ -132,9 +134,18 @@ const App = () => {
 
   ];
 
+  const { anchorPoint, show, handleContextMenu } = useContextMenu()
 
+  return (
+    <>
 
-  return <ContextMenuView data={data} />;
+      <div className={Styled.kvadrat} onContextMenu={handleContextMenu}></div>
+
+      {show && <ContextMenuView PositionX={anchorPoint.x}
+        PositionY={anchorPoint.y} data={data} />}
+
+    </>
+  )
 };
 
 ReactDOM.render(<App />, document.getElementById('app'));
